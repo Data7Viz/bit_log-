@@ -26,8 +26,14 @@ int main ()
 		{
 			printf(" %d", ((var1 & var2) >> i) & 1);
 		}
-		else if (op == '|')                                                                   {                                                                                             printf(" %d", ((var1 | var2) >> i) & 1);                                      }
-		else if (op == '^')                                                                   {                                                                                             printf(" %d", ((var1 ^ var2) >> i) & 1);                                      }
+		else if (op == '|') 
+		{ 
+			printf(" %d", ((var1 | var2) >> i) & 1);
+		} 
+		else if (op == '^') 
+		{
+			printf(" %d", ((var1 ^ var2) >> i) & 1);    
+		}
 	}
 	printf ("\n\n");
 } 
