@@ -32,8 +32,9 @@ printf(RD"%37c\n"RS, op );
 //вторая переменная разлаживаем на биты
 for(int i = RAZR; i >=0; i --)
 {
-        if ((b >> i) & 1){printf(S" 1"RS );}                                                 else {printf(" 0" );}
-        if (i == 8)
+        if ((b >> i) & 1){printf(S" 1"RS );}                      
+	    else {printf(" 0" );} 
+		if (i == 8)
         {
                 printf("  " );
         }                                                                            }
@@ -45,7 +46,9 @@ switch (op)
         case '&': res = a & b; break;
         case '|': res = a | b; break;
         case '^': res = a ^ b; break;
-	case '<': res = a << b; break;                                            case '>': res = a >> b; break;                                            case '+': res = a + b; break;
+	    case '<': res = a << b; break;
+        case '>': res = a >> b; break;           
+	    case '+': res = a + b; break;
         case '-': res = a - b; break;
         case '/': res = a / b; break;
         case '*': res = a * b; break;
