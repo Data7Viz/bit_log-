@@ -29,10 +29,16 @@ printf(S"%3ld"RS, b);
 
 //блок определения оператора 
 switch (op)
-{                                                                                 case '&': res = a & b; break;
-        case '|': res = a | b; break;                                             case '^': res = a ^ b; break;                                             case '<': res = a << b; break;                                            case '>': res = a >> b; break;                                            case '+': res = a + b; break;
+{       
+	    case '&': res = a & b; break;
+        case '|': res = a | b; break;                                             
+        case '^': res = a ^ b; break;                                             
+        case '<': res = a << b; break;                                            
+        case '>': res = a >> b; break;                                            
+        case '+': res = a + b; break;
         case '-': res = a - b; break;
-        case '/': res = a / b; break;                                             case '*': res = a * b; break;
+        case '/': res = a / b; break;        
+        case '*': res = a * b; break;
         case '~': res = ~ a; break;                                       
 }
 printf(G" = %2ld\n\n"RS, res);
@@ -50,7 +56,8 @@ for(int i = 0; i <= raz; i ++)
         else { printf ("%2s", "  0"); }
         
 	//переменная res разлаживаем на биты 1 жёлтые 0 белые
-	if (((res >> i) & 1) == 1) { printf(G"%5s"RS, "  1"); }                   else { printf ("%2s", "  0"); }
+	if (((res >> i) & 1) == 1) { printf(G"%5s"RS, "  1"); }        
+	else { printf ("%2s", "  0"); }
 	
 	//вывод DEC HEX 
 	printf(BR"           %-10lu"RS, dec << i);
