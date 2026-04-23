@@ -85,6 +85,9 @@
 
 **Принтуем по вертикали со смещением**
 
+<img width="1200" height="1920" alt="95" src="https://github.com/user-attachments/assets/c096c596-f715-4482-9948-c55f9661d417" />
+
+
 README.md нужно дописать.
 
 
