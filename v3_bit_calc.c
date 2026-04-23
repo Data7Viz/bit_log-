@@ -35,11 +35,13 @@ printf(RD"%53c\n"RS, op );
 printf("   ");
 for(int i = RAZR; i >=0; i --)
 {
-        if ((b >> i) & 1){printf(S"1"RS );}                                                 else {printf("0" );}
+        if ((b >> i) & 1){printf(S"1"RS );} 
+		else {printf("0" );}
         if ((i % 4) == 0)
         {
                 printf("  " );
-        }                                                                            }
+        }   
+}
 printf(S">%d\n"RS, b);
 printf("\n" );
 // выбор оператора
@@ -49,8 +51,8 @@ switch (op)
         case '|': res = a | b; break;
         case '^': res = a ^ b; break;
         case '<': res = a << b; break;
-	case '>': res = a >> b; break;               
-	case '+': res = a + b; break;
+	    case '>': res = a >> b; break;               
+	    case '+': res = a + b; break;
         case '-': res = a - b; break;
         case '/': res = a / b; break;
         case '*': res = a * b; break;
