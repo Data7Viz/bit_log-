@@ -91,6 +91,20 @@
 <img width="1200" height="1920" alt="95" src="https://github.com/user-attachments/assets/c096c596-f715-4482-9948-c55f9661d417" />
 
 
+### Запуск сборка кодировка установка 
+
+vim file.c 
+
+gcc file.c -o file
+
+clang file.c -o file
+
+./file 
+
+pkg install 
+
+
+
 
 
 
