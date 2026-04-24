@@ -97,20 +97,29 @@
 <img width="1200" height="1920" alt="95" src="https://github.com/user-attachments/assets/c096c596-f715-4482-9948-c55f9661d417" />
 
 
-### Запуск сборка кодировка установка 
 
-vim file.c 
+## Запуск и сборка
 
-gcc file.c -o file
+Для работы программы вам понадобится компилятор `gcc` или `clang`. Linux Termux.
 
-clang file.c -o file
+### Компиляция
+Используйте любую из команд в терминале:
+```bash
+# Через GCC
+gcc v1_bit_calc.c -o bit_calc
 
-./file 
+# Или через Clang
+clang v1_bit_calc.c -o bit_calc
+```
 
-pkg install 
+### Запуск
+```bash
+./bit_calc
+```
 
-
-
+> **Примечание для пользователей Android (Termux):**
+> Перед сборкой убедитесь, что у вас установлен пакет компилятора:
+> `pkg install clang`
 
 
 
